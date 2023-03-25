@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite build --mode developmemnt",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vite",
+    "build": "vite build && vite build --mode production",
+    "watch": "vite build --watch",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "vue": "^3.2.47"
